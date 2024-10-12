@@ -1,0 +1,20 @@
+{
+	"name": "TaxiRidesOutput",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeTaxiRides",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "Output",
+				"fileSystem": "taxirides"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
